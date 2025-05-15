@@ -109,5 +109,3 @@ This project is deployed on **Vercel**:
 -   [Vercel Deploy Docs](https://nextjs.org/docs/app/building-your-application/deploying)
 
 ---
-
-Let me know if you want this turned into a downloadable `README.md` or used in your GitHub project!
