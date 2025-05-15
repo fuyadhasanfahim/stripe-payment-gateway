@@ -1,17 +1,16 @@
+import { getProducts } from '@/app/server-actions/product';
 import Buy from '@/components/(home)/Buy';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
-
 import Image from 'next/image';
 
 export default async function HomePage() {
-    const response = await fetch('http://localhost:3000/api/get-products');
-    const { data } = await response.json();
+    const data = await getProducts();
 
     return (
         <section className="padding-x padding-y">
             <div className="container">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {data.map(
+                    {data?.map(
                         (
                             product: {
                                 _id: string;

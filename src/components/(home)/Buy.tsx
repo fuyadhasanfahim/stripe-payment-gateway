@@ -24,7 +24,7 @@ export default function Buy({ id }: { id: string }) {
 
     const fetchClientSecret = useCallback(async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/payment', {
+            const response = await fetch('/api/payment', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
